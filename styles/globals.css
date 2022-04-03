@@ -1,16 +1,18 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font: 1.2rem/1.6 'Raleway', sans-serif;
+  overflow-x: hidden;
+}
+
+.input {
+  @apply bg-dark text-light-gray rounded p-4 pl-14 w-full focus:outline focus:outline-dark-blue focus:outline-2;
 }
